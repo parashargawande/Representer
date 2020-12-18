@@ -1,0 +1,57 @@
+.Representer{
+    @import 'bootstrap';
+
+    .Presenter-Date{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size:25px;
+    color: rgb(204, 0, 0);
+    }
+    .RedRibbon{
+        background-color: rgb(204, 0, 0);
+        color: white;
+        padding: 5px 10px;
+        font-size:20px;
+        font-weight: 500;
+    }
+    .RedRibbon-center{
+        display: flex;
+        justify-content: center;
+    }
+    .RedRibbon-Right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Presenter{
+        padding: 20px 0px;
+        border-bottom: 1px solid gray;
+    }
+    .Presenter-image{
+        width: 150px;
+        height: 180px;
+        padding: 5px;
+    }
+
+    .Presenter-time{
+        color: rgb(204, 0, 0);
+        font-weight: 500;
+        justify-content: flex-end;
+        display: flex;
+        padding: 0px 30px;
+    }
+    .Presenter-Details-heading{
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .Presenter-Details{
+        margin-bottom: 10px;
+    }
+
+    .Presenter-Subheading{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}   

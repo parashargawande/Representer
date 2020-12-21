@@ -6,17 +6,15 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import * as strings from 'HelloWorldWebPartStrings';
+import * as strings from 'RepresentersWebPartStrings';
 import { IRepresenter } from './components/Representer/IRepresenter';
 import Representer from './components/Representer/Representer';
 
-
-
-export interface IHelloWorldWebPartProps {
+export interface IRepresentersWebPartProps {
   description: string;
 }
 
-export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
+export default class RepresentersWebPart extends BaseClientSideWebPart<IRepresentersWebPartProps> {
 
   public render(): void {
     const element: React.ReactElement<IRepresenter> = React.createElement(
@@ -26,7 +24,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
       }
     );
 
-    ReactDom.render(element, this.domElement);
+    ReactDom.render(element, this.domElement)
   }
 
   protected onDispose(): void {

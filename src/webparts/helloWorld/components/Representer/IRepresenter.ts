@@ -1,3 +1,6 @@
+import { WebPartContext } from "@microsoft/sp-webpart-base";
+
 export interface IRepresenter{
-    description : string
+    description : string,
+    context: WebPartContext
 }
